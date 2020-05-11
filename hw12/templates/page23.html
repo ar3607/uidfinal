@@ -1,0 +1,59 @@
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="{{ url_for('static', filename = 'trail.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+
+
+    <style>
+    </style>
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">Lets Learn Trail Signs!</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  </nav>
+<div class = "container">
+<div class="top"> <br> <br>
+<span class="title1">   We’ve made it to the end of the trail! <br /> You’re a trail sign expert.
+</span> <br> <br>
+</div>
+
+<div class="review">Here are the questions you initially got <span class="red"> wrong</span>, click "Learn Again" to review their content:</div> <br />
+<div class="wrong" id="wrong">
+    
+</div>
+   
+
+
+           <div class="row">
+
+               <div class="col-sm">
+               </div>
+               <div class="col-sm center">
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <button type="button" id="button1" onclick="open1()" class="btn btn-dark" style="font-size : 30px;">Learn Again</button>
+               </div>
+               <div class="col-sm">
+               </div>
+           </div>
+
+
+
+</div>
+
+
+</body>
+</html>
